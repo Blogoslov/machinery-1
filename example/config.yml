@@ -1,0 +1,8 @@
+---
+broker: 'nats://127.0.0.1:4222'
+default_queue: machinery_tasks
+result_backend: 'memsqlcache://root:f00b4r@tcp(192.168.0.28:3306)/machinery'
+results_expire_in: 3600000
+nats:
+  cluster_id: test-cluster
+  client_id: 7890
